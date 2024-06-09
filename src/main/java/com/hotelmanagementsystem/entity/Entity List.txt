@@ -1,0 +1,84 @@
+1. Guest:
+   - Guest ID
+   - Name
+   - Contact Information
+   - Payment Information
+   - Reservation History
+
+2. Reservation:
+   - Reservation ID
+   - Guest ID
+   - Room ID
+   - Check-in Date
+   - Check-out Date
+   - Reservation Status
+   - Payment Details
+
+3. Room:
+   - Room ID
+   - Room Type (e.g., single, double, suite)
+   - Room Status (e.g., available, occupied, under maintenance)
+   - Room Rate
+   - Features (e.g., sea view, balcony)
+
+4. Room Type:
+   - Room Type ID
+   - Description
+   - Base Rate
+
+5. Payment:
+   - Payment ID
+   - Reservation ID
+   - Payment Date
+   - Amount
+   - Payment Method
+
+6. Employee:
+   - Employee ID
+   - Name
+   - Position
+   - Contact Information
+   - Work Schedule
+
+7. Service:
+   - Service ID
+   - Description
+   - Cost
+
+8. Service Request:
+   - Request ID
+   - Guest ID
+   - Service ID
+   - Request Date
+   - Status
+
+9. Feedback:
+   - Feedback ID
+   - Guest ID
+   - Reservation ID
+   - Comments
+   - Rating
+
+10. Invoice:
+    - Invoice ID
+    - Reservation ID
+    - Issue Date
+    - Total Amount
+
+11. Maintenance:
+    - Maintenance ID
+    - Room ID
+    - Description of Issue
+    - Maintenance Status
+    - Scheduled Date
+
+12. Inventory:
+    - Item ID
+    - Description
+    - Quantity
+    - Location
+
+13. Booking Channel (e.g., direct, online travel agency):
+    - Channel ID
+    - Name
+    - Contact Information
