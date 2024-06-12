@@ -1,0 +1,25 @@
+Guest to Reservation: One-to-Many
+
+Reservation to Room: Many-to-One
+
+Room to Room Type: Many-to-One
+
+Reservation to Payment: One-to-Many
+
+Reservation to Invoice: One-to-One
+
+Guest to Service Request: One-to-Many
+
+Service Request to Service: Many-to-One
+
+Employee to Service Request: One-to-Many
+
+Guest to Feedback: One-to-Many
+
+Reservation to Feedback: One-to-Many
+
+Room to Maintenance: One-to-Many
+
+Booking Channel to Reservation: One-to-Many
+
+Inventory to Room: Many-to-Many (managed through a junction table)
