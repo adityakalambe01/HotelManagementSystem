@@ -1,4 +1,4 @@
-package com.hotelmanagementsystem.exception;
+package com.hotelmanagementsystem.entity.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 @NoArgsConstructor
 @AllArgsConstructor
-public class InvalidFeedbackException extends RuntimeException{
-    private String message = "Invalid feedback!!!";
+public class InvalidServiceException extends RuntimeException{
+    private String message = "Invalid service!!!";
 
     @Override
     public String toString(){
-        return "InvalidFeedbackException: "+ message;
+        return "InvalidServiceException: " + message;
     }
 }

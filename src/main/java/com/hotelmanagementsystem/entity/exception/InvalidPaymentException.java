@@ -1,4 +1,4 @@
-package com.hotelmanagementsystem.exception;
+package com.hotelmanagementsystem.entity.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 @NoArgsConstructor
 @AllArgsConstructor
-public class InvalidRoomException extends RuntimeException{
-    private String message = "Invalid room!!!";
+public class InvalidPaymentException extends RuntimeException{
+    private String message = "Invalid payment!!!";
 
     @Override
     public String toString(){
-        return "InvalidRoomException: " + message;
+        return "InvalidPaymentException: " + message;
     }
 }

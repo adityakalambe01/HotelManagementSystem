@@ -1,4 +1,4 @@
-package com.hotelmanagementsystem.exception;
+package com.hotelmanagementsystem.entity.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
