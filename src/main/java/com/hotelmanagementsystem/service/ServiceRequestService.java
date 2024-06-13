@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ServiceRequestService {
-    @Autowired
-    private ServiceRequestRepository serviceRequestRepository;
+//    @Autowired
+//    private ServiceRequestRepository serviceRequestRepository;
 }

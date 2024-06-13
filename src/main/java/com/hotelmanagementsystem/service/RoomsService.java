@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class RoomsService {
-    @Autowired
-    private RoomRepository roomRepository;
+//    @Autowired
+//    private RoomRepository roomRepository;
 }

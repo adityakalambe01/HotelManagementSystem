@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PaymentService {
-    @Autowired
-    private PaymentRepository paymentRepository;
+//    @Autowired
+//    private PaymentRepository paymentRepository;
 }

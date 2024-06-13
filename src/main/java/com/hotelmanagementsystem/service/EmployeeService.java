@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EmployeeService {
-    @Autowired
-    private EmployeeRepository employeeRepository;
+//    @Autowired
+//    private EmployeeRepository employeeRepository;
 }
