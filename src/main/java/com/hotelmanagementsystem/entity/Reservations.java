@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -17,9 +18,11 @@ public class Reservations {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long reservationId;
 
-    private Long guestId;
+    @ManyToOne
+    private Guests guestId;
 
-    private Long roomId;
+    @ManyToOne
+    private Rooms roomId;
 
     private LocalDate checkInDate;
 
@@ -28,4 +31,7 @@ public class Reservations {
     private String reservationStatus;
 
     private String paymentDetails;
+
+    @ManyToOne
+    private BookingChannel bookingChannelId;
 }

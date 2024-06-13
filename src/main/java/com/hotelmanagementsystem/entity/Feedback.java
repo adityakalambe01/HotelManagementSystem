@@ -15,7 +15,8 @@ public class Feedback {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long feedbackId;
 
-    private Long guestId;
+    @ManyToOne
+    private Guests guestId;
 
     private Long reservationId;
 

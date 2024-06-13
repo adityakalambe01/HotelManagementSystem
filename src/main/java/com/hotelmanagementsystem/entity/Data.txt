@@ -1,0 +1,92 @@
+Creating an Entity-Relationship Diagram (ERD) for a hotel management system involves visualizing the entities and their relationships. Below is a description of the ERD:
+
+1. Entities and Attributes:
+   - Guest:
+     - Guest ID (PK)
+     - Name
+     - Contact Information
+     - Payment Information
+     - Reservation History
+   - Reservation:
+     - Reservation ID (PK)
+     - Guest ID (FK)
+     - Room ID (FK)
+     - Check-in Date
+     - Check-out Date
+     - Reservation Status
+     - Payment Details
+     - Booking Channel ID (FK)
+   - Room:
+     - Room ID (PK)
+     - Room Type ID (FK)
+     - Room Status
+     - Room Rate
+     - Features
+   - Room Type:
+     - Room Type ID (PK)
+     - Description
+     - Base Rate
+   - Payment:
+     - Payment ID (PK)
+     - Reservation ID (FK)
+     - Payment Date
+     - Amount
+     - Payment Method
+   - Employee:
+     - Employee ID (PK)
+     - Name
+     - Position
+     - Contact Information
+     - Work Schedule
+   - Service:
+     - Service ID (PK)
+     - Description
+     - Cost
+   - Service Request:
+     - Request ID (PK)
+     - Guest ID (FK)
+     - Service ID (FK)
+     - Employee ID (FK)
+     - Request Date
+     - Status
+   - Feedback:
+     - Feedback ID (PK)
+     - Guest ID (FK)
+     - Reservation ID (FK)
+     - Comments
+     - Rating
+   - Invoice:
+     - Invoice ID (PK)
+     - Reservation ID (FK)
+     - Issue Date
+     - Total Amount
+   - Maintenance:
+     - Maintenance ID (PK)
+     - Room ID (FK)
+     - Description of Issue
+     - Maintenance Status
+     - Scheduled Date
+   - Inventory:
+     - Item ID (PK)
+     - Description
+     - Quantity
+     - Location
+   - Booking Channel:
+     - Channel ID (PK)
+     - Name
+     - Contact Information
+
+2. Relationships:
+   - Guest to Reservation: One-to-Many
+   - Reservation to Room: Many-to-One
+   - Room to Room Type: Many-to-One
+   - Reservation to Payment: One-to-Many
+   - Reservation to Invoice: One-to-One
+   - Guest to Service Request: One-to-Many
+   - Service Request to Service: Many-to-One
+   - Employee to Service Request: One-to-Many
+   - Guest to Feedback: One-to-Many
+   - Reservation to Feedback: One-to-Many
+   - Room to Maintenance: One-to-Many
+   - Booking Channel to Reservation: One-to-Many
+   - Inventory to Room: Many-to-Many (managed through a junction table)

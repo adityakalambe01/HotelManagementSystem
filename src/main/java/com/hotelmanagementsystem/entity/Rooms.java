@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -15,7 +17,8 @@ public class Rooms {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long roomId;
 
-    private String roomType;
+    @ManyToOne
+    private RoomType roomType;
 
     private String roomStatus;
 

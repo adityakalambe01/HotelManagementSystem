@@ -17,7 +17,8 @@ public class Invoice {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long invoiceId;
 
-    private Long reservationId;
+    @OneToOne
+    private Reservations reservationId;
 
     private LocalDate issueDate;
 

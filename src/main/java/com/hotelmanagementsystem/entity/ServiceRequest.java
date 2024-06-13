@@ -5,6 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,11 +16,20 @@ import lombok.NoArgsConstructor;
 public class ServiceRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long serviceId;;
+    private Long requestId;
 
-    private String description;
+    @ManyToOne
+    private Guests guestId;
 
-    private Double serviceCost;
+    @ManyToOne
+    private Service serviceId;;
+
+    @ManyToOne
+    private Employees employeeId;
+
+    private LocalDate requestDate;
+
+    private Boolean serviceStatus;
 
 
 }

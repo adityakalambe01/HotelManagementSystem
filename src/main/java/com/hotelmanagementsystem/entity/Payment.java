@@ -17,7 +17,8 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long paymentId;
 
-    private Long reservationId;
+    @ManyToOne
+    private Reservations reservationId;
 
     private LocalDate paymentDate;
 

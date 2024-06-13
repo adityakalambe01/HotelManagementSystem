@@ -17,7 +17,8 @@ public class Maintenance {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long maintenanceId;
 
-    private Long roomId;
+    @ManyToOne
+    private Rooms roomId;
 
     private String descriptionOfIssue;
 
